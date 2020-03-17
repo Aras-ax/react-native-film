@@ -7,6 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
   TextInput,
+  Image,
   Alert,
 } from 'react-native';
 import React, {Component} from 'react';
@@ -82,7 +83,7 @@ export default class Login extends Component {
             flexDirection: 'column',
             paddingHorizontal: 40,
             flex: 1,
-            paddingTop: 80,
+            paddingTop: 180,
             paddingBottom: 80,
             backgroundColor: '#23223d',
             position: 'relative',
@@ -122,6 +123,7 @@ export default class Login extends Component {
               忘记密码?
             </Text>
           </View>
+
           <View style={styles.register}>
             <Text
               style={{

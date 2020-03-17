@@ -54,7 +54,7 @@ export default class My extends Component {
           }}>
           <View style={styles.header}>
             <Image
-              source={require('../img/avator.png')}
+              source={require('../img/avator.jpg')}
               style={{
                 width: 60,
                 height: 60,
@@ -63,7 +63,7 @@ export default class My extends Component {
             />
             <View style={{flexDirection: 'column', flex: 1}}>
               <Text style={{fontSize: 22, paddingTop: 6, color: '#111'}}>
-                小小影视
+                Idemo Nole
               </Text>
               <View
                 style={{
@@ -72,34 +72,24 @@ export default class My extends Component {
                   height: 40,
                 }}>
                 <Text style={{color: '#777', flex: 1, fontSize: 14}}>
-                  每个夜晚，与你相伴
+                  原来你是这样的德语科维奇
                 </Text>
               </View>
             </View>
           </View>
           <View style={styles.item}>
-            <View style={styles.leaf}>
-              <Icon name="movie" size={20} style={styles.icon}></Icon>
-              <Text
-                style={styles.text}
-                onPress={() => this.context.push('Home')}>
-                看电影
+            <View style={[styles.leaf, styles.borderbottom]}>
+              <Icon
+                style={(styles.icon, {color: '#ee8b0c'})}
+                size={20}
+                name="receipt"></Icon>
+              <Text style={styles.text} onPress={() => navigate('AboutUs')}>
+                德约科维奇
               </Text>
               <Text>></Text>
             </View>
           </View>
-
           <View style={styles.item}>
-            <View style={[styles.leaf, styles.borderbottom]}>
-              <Icon
-                style={[styles.icon, {color: '#1b74e9'}]}
-                size={20}
-                name="star"></Icon>
-              <Text style={styles.text} onPress={() => navigate('Favourite')}>
-                收藏
-              </Text>
-              <Text>></Text>
-            </View>
             <View style={[styles.leaf, styles.borderbottom]}>
               <Icon
                 style={(styles.icon, {color: '#ee8b0c'})}
@@ -120,21 +110,6 @@ export default class My extends Component {
               <Text>></Text>
             </View>
           </View>
-          {/* <View style={styles.item}>
-          <View style={styles.leaf}>
-            <Icon
-              name="settings"
-              size={20}
-              style={[styles.icon, { color: "#1b74e9" }]}
-            ></Icon>
-            <Text
-              style={styles.text}
-              onPress={() => navigate("Coupon", { title: "我的设置" })}
-            >
-              设置
-            </Text>
-          </View>
-        </View> */}
 
           <View style={styles.item}>
             <View style={styles.leaf}>

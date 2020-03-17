@@ -6,21 +6,23 @@ export default class AboutUs extends Component {
   constructor(props) {
     super(props);
   }
-  // static navigationOptions = ({ navigation }) => ({
-  //   headerTitle: "关于我们",
-  //   headerTintColor: "#111",
-  //   headerStyle: {
-  //     backgroundColor: "#f5f5f5",
-  //     opacity: 1
-  //   }
-  // });
-
   render() {
     return (
       <View style={{height: height, width: width}}>
-        <Text style={{lineHeight: 30, padding: 24}}>
+        <Text style={{lineHeight: 30, paddingHorizontal: 24, paddingTop: 24}}>
+          &emsp;&emsp; 诺瓦克·德约科维奇（Novak
+          Djokovic），1987年5月22日出生于塞尔维亚，塞尔维亚职业网球运动员。
+        </Text>
+        <Text
+          style={{lineHeight: 30, paddingHorizontal: 24, paddingVertical: 6}}>
           &emsp;&emsp;
-          感谢下载我们的APP小小影视。小小影视是一款影视资讯类APP。这里有你各种影视资讯及评价，希望你们会喜欢。如果有什么不足的地方请多多包涵。有宝贵意见或者建议也可以第一时间反馈给我们，我们一定会不断改进，以便带来更好的体验。
+          2003年，德约科维奇转为职业球员，开始职业生涯。2007年，世界排名升至第三。2008年，首次获得澳网冠军。2011年，获得澳网、温网和美网冠军，世界排名升至第一。2016年，勇夺法网冠军，并实现跨年连夺四大满贯的壮举，完成职业生涯全满贯。2018年8月，首次问鼎辛辛那提大师赛，职业生涯包揽大师赛全部九站冠军，达成“金大师”伟业。2020年2月2日德约科维奇逆转战胜蒂姆，成就史无前例的澳网八冠王，也将自己职业生涯大满贯数量增加至17个。
+        </Text>
+
+        <Text
+          style={{lineHeight: 30, paddingHorizontal: 24, paddingVertical: 6}}>
+          &emsp;&emsp;
+          截至2020年2月24日，德约科维奇已经赢得包括17个大满贯、33个大师系列赛和5个年终总决赛在内的74项ATP单打桂冠。2019年1月，ATP世界排名第1。
         </Text>
       </View>
     );
